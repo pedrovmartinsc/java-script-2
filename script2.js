@@ -1,7 +1,20 @@
-let fullName = "Pedro Victor Martins Câmara";
-let age = 21;
-let student = true;
+//const = a variable that can't be changed
 
-document.getElementById("p1").textContent = `Your namew is ${fullName}`;
-document.getElementById("p2").textContent = `You are ${age} years old`;
-document.getElementById("p3").textContent = `Enrolled: ${student}`;
+const pi = 3.14159;
+let radius;
+let circumference;
+
+
+
+
+
+
+
+console.log(circumference)
+
+document.getElementById("mySubmit").onclick = function(){
+    radius = document.getElementById("myText").value 
+    radius = Number(radius);
+    circumference = 2 * pi * radius;
+    document.getElementById("myH3").textContent = circumference;
+}
